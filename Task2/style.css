@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid #6a11cb;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.header-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #6a11cb;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #9d25d7;
+}
+
+.header-content .btn {
+    background: #6a11cb;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.header-content .btn:hover {
+    background: #9d25d7;
+}
+
+/* Styling the navigation bar */
+nav {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a11cb;
+}
+
+/* Styling the main content area */
+main {
+    padding: 20px;
+}
+
+/* Section titles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+/* Card style for sections */
+.card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: scale(1.037);
+}
+
+
+
+/* Text and list styles inside cards */
+.card p, .card ul {
+    margin: 10px 0;
+    color: #9d25d7;
+}
+
+.card ul li {
+    margin-left: 20px;
+}
+
+/* Styling the social media links */
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #6a11cb;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #e0e0e0;
+}
+
+/* Styling the footer */
+footer {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 2.5em;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
